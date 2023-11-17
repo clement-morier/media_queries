@@ -1,0 +1,23 @@
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:767px) {
+    header{
+        padding: 20px;
+    }
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        display: none;
+    }
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+}
